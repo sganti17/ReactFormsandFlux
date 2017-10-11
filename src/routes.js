@@ -13,6 +13,7 @@ var routes = (
         <DefaultRoute handler = {require('./components/homepage')}/>
         <Route name = "authors" handler = {require('./components/authors/authorPage')}/>
         <Route name = "about" handler = {require('./components/about/aboutpage')}/>
+        <Route name = "manageAuthor" path = "author/:id" handler={require('./components/authors/manageAuthorPage')}/>
         <Route name = "addAuthor" path = "author" handler = {require('./components/authors/manageAuthorPage')}/>
         <NotFoundRoute handler = {require('./components/notFoundPage')}/>
         <Redirect from = "about-us" to = "about"/>

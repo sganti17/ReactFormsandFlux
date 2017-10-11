@@ -7,7 +7,7 @@ $ = jQuery = require('jquery');
 
 var App = React.createClass({
     render: function() {
-
+        "use strict";
         return (
             <div>
                 <Header/>

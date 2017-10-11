@@ -3,23 +3,23 @@
 var React = require('react');
 
 var Input = React.createClass({
-    PropTypes:{
+    PropTypes: {
         name: React.PropTypes.string.isRequired,
         label: React.PropTypes.string.isRequired,
         onChange: React.PropTypes.func.isRequired,
         placeholder: React.PropTypes.string,
         value: React.PropTypes.string,
-        error: React.PropTypes.string,
+        error: React.PropTypes.string
     },
 
    render: function () {
        var wrapperClass = "form-group";
-       if(this.props.error && this.props.error.length > 0) {
+       if (this.props.error && this.props.error.length > 0) {
            wrapperClass += "" + 'has-error';
        }
        return (
             <div className={wrapperClass}>
-                <label htmlFor={this.props.name}>{this.props.label}</label>
+                <label htmlFor={this.props.name}> {this.props.label} </label>
                 <div className="field">
                     <input type="text"
                         name = {this.props.name}
@@ -37,4 +37,4 @@ var Input = React.createClass({
    }
 });
 
-module.exports =Input;
+module.exports = Input;

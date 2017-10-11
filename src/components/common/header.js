@@ -9,10 +9,11 @@ var Header = React.createClass({
        return (
            <nav className ="navbar navbar-default">
                <div className="container-fluid">
-                   <Link className="navbar-brand" to="app">
-                       <img className="img-responsive pull-left" height={100} width={100} marginHeight={0} src = "images/pluralsight-logo.ico"/>
-                   </Link>
+
                    <ul className="nav navbar-nav">
+                       <li><Link className="navbar-brand" to="app">
+                           <img className="img-responsive pull-left" height={60} width={60} marginHeight={0} src = "images/pluralsight-logo.ico"/>
+                       </Link></li>
                        <li> <Link to = "app">Home </Link> </li>
                        <li> <Link to = "authors">Authors </Link> </li>
                        <li> <Link to = "about">About </Link> </li>
